@@ -17,6 +17,6 @@ type Author {
 }
 
 type Query {
-    getAllBook: [Book]!
-    getBook(id: ID!): Boolean!
+    getAllBooks: [Book]!
+    getBook(id: ID!): Book!
 }
