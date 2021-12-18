@@ -1,0 +1,22 @@
+type Book {
+    id: ID!
+    title: String!
+    author: Author
+    description: String!
+}
+
+input BookInput {
+    title: String!
+    description: String!
+}
+
+type Author {
+    id: ID
+    firstName: String!
+    lastName: String!
+}
+
+type Query {
+    getAllBook: [Book]!
+    getBook(id: ID!): Boolean!
+}
